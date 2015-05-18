@@ -1,1 +1,1 @@
-import matplotlib.pyplot as pltimport numpy as npfig, ax = plt.subplots()x = np.linspace(0, 10, 200)y = np.sin(x)ax.plot(x, y, 'b-', linewidth=2)plt.show()
+import matplotlib.pyplot as pltimport numpy as npfig, ax = plt.subplots()x = np.linspace(0, 10, 200)for i in range(3):   y = np.sin(x/(i+1))   ax.plot(x, y, 'b.', linewidth=2)plt.show()
